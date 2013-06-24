@@ -1,0 +1,21 @@
+{
+    EOModelVersion = "2.1"; 
+    adaptorName = JDBC; 
+    connectionDictionary = {URL = "jdbc:h2:~/RabbitMQExampleModel"; }; 
+    entities = (
+        {className = "fr.sophiacom.wowodc.model.Device"; name = Device; }, 
+        {className = "fr.sophiacom.wowodc.model.Log"; name = Log; }
+    ); 
+    userInfo = {
+        "_EntityModeler" = {
+            activeDatabaseConfigName = Default; 
+            databaseConfigs = {
+                Default = {
+                    adaptorName = JDBC; 
+                    connectionDictionary = {URL = "jdbc:h2:~/RabbitMQExampleModel"; }; 
+                    prototypeEntityName = EOJDBCH2Prototypes; 
+                }; 
+            }; 
+        }; 
+    }; 
+}

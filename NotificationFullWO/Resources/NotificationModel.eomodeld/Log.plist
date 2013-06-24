@@ -1,0 +1,30 @@
+{
+    attributes = (
+        {allowsNull = N; columnName = deviceID; name = deviceID; prototypeName = id; }, 
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {
+            allowsNull = Y; 
+            columnName = message; 
+            name = message; 
+            prototypeName = varchar255; 
+        }, 
+        {columnName = sendingTime; name = sendingTime; prototypeName = intNumber; }
+    ); 
+    attributesUsedForLocking = (deviceID, id); 
+    className = "fr.sophiacom.wowodc.model.Log"; 
+    classProperties = (device, message, sendingTime); 
+    externalName = log; 
+    fetchSpecificationDictionary = {}; 
+    name = Log; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = Device; 
+            isMandatory = Y; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = deviceID; }); 
+            name = device; 
+        }
+    ); 
+}

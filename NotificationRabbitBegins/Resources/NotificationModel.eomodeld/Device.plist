@@ -1,0 +1,20 @@
+{
+    attributes = (
+        {allowsNull = N; name = id; prototypeName = id; }, 
+        {
+            columnName = platform; 
+            name = platform; 
+            prototypeName = javaEnum; 
+            valueClassName = "fr.sophiacom.wowodc.model.pojo.Platform"; 
+            width = 20; 
+        }, 
+        {columnName = user; name = user; prototypeName = varchar50; }
+    ); 
+    attributesUsedForLocking = (id); 
+    className = "fr.sophiacom.wowodc.model.Device"; 
+    classProperties = (platform, user); 
+    externalName = device; 
+    fetchSpecificationDictionary = {}; 
+    name = Device; 
+    primaryKeyAttributes = (id); 
+}

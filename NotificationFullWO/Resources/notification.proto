@@ -1,0 +1,14 @@
+package protobuf;
+option java_package = "fr.sophiacom.wowodc.protobuf";
+option java_outer_classname = "NotificationProto";
+
+
+message Notification {
+    required string user = 1;
+    optional string message = 2;
+}
+
+message Log {
+    required Notification notification = 1;
+    required int32 sendingTime = 2;
+}
